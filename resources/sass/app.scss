@@ -1,2 +1,21 @@
 @import './partials/generals';
 @import './partials/vars';
+@import './partials/card.scss';
+
+
+main{
+    padding: 5rem 0;
+}
+
+.section{
+    .section-title{
+        padding: 2rem 0;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .cards{
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
