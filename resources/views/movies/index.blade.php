@@ -19,26 +19,26 @@
                                 {{ $movie->original_title }}
                             </span>
                         </h3>
-                        <div class="info_wrapper">
-                            <span class="info">
+                        <ul class="info_wrapper">
+                            <li class="info">
                                 Nazionalit&aacute;:
                                 <span class="detail">
                                     {{ $movie->nationality }}
                                 </span>
-                            </span>
-                            <span class="info">
+                            </li>
+                            <li class="info">
                                 Data:
                                 <span class="detail">
                                     {{ $movie->date }}
                                 </span>
-                            </span>
-                            <span class="info">
+                            </li>
+                            <li class="info">
                                 Voto:
                                 <span class="detail">
                                     {{ $movie->vote }}
                                 </span>
-                            </span>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 @endforeach
             </div>

@@ -1,45 +1,49 @@
-.card__wrapper{
+.card__wrapper {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: $mv-sizeStandard;
     font-weight: bold;
     text-align: center;
 
-    color: #222;
     border-radius: 0.5rem;
-    border: 1px solid #999;
-    background-color: transparent;
+    padding: $mv-sizeSmallest;
+    border: 1px solid $mv-border;
+    
+    color: $mv-secondary-darker;
+    background-color: $mv-primary;
+    
     transition: 600ms cubic-bezier(0.215, 0.610, 0.355, 1);
 
-    &:hover{
+    &:hover {
         transform: scale(1.01);
-        border: 1px solid #222;
+        border: 1px solid $mv-border-hover;
     }
 
-    .title_wrapper{
-        padding: 1rem 0;
-        
-        >*{
+    .title_wrapper {
+        padding: $mv-sizeSmallest 0;
+
+        >* {
             display: block;
         }
 
-        .title{
-            font-size: 2.25rem;
+        .title {
+            font-size: $mv-sizeBig;
             padding-bottom: 0;
         }
 
-        .original-title{
-            font-size: 1.5rem;
-            opacity: 0.9;
+        .original-title {
+            font-size: $mv-sizeSmall;
+            opacity: 0.8;
         }
     }
 
-    .info_wrapper{
-        .info{
-            padding: 0.75rem 1.5rem;
-            font-size: 1.5rem;
+    .info_wrapper {
+        .info {
+            padding: 0.75rem 0;
+            font-size: $mv-sizeSmall;
             display: flex;
             align-items: center;
-            .detail{
+
+            .detail {
                 text-transform: capitalize;
                 font-weight: normal;
                 margin-left: auto;
