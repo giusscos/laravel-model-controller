@@ -8,9 +8,13 @@
             <h2 class="section-title">
                 Movies
             </h2>
+            <span class="go-to">
+                Torna alla
+                <a href="{{ route('home') }}" class="link-togo">home</a>
+            </span>
             <div class="cards">
                 @foreach ($movies as $movie)
-                    <div class="card__wrapper">
+                    <a href="{{ route('movie', $movie->id) }}" class="card__wrapper">
                         <h3 class="title_wrapper">
                             <span class="title">
                                 {{ $movie->title }}
@@ -39,7 +43,7 @@
                                 </span>
                             </li>
                         </ul>
-                    </div>
+                    </a>
                 @endforeach
             </div>
         </section>
